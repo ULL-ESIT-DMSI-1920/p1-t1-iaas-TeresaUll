@@ -38,7 +38,7 @@ GIT_PROMPT_ONLY_IN_REPO=1
 source ~/.bash-git-prompt/gitprompt.sh
 
 
-# Alias en git
+# 4. Alias en git
 
 Esta funcionalidad nos permite cambiar el nombre a comandos que utilicemos recurrentemente para que sea más rápido trabajar con ellos. 
 Utilizando el comando:
@@ -51,3 +51,15 @@ Lo que debemos escribir será:
     git config --global.delete ´ gh api -X DELETE /repos/ULL-ESIT-DMSI-1920/pruebateresa´
 
     !! NO ME FUNCIONA !!
+
+# 5. Instalación de nvm
+
+Para instalar nvm ejecutamos el siguiente comando:
+    wget -qO- https://raw.githubusercontent.com/nvm-sh/nvm/v0.38.0/install.sh | bash
+
+Ahora podemos instalar nvm con el comando:
+    nvm install --lts
+
+# 6. Instalación de NodeJ con nvm 
+
+
