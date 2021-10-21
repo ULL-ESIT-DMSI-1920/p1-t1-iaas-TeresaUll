@@ -1,5 +1,3 @@
-# p1-t1-iaas-TeresaUll
-p1-t1-iaas-TeresaUll created by GitHub Classroom
 
 # Práctica 1: IAAS
 
@@ -64,7 +62,7 @@ Ahora podemos instalar nvm con el comando:
 Ejecutamos el comando: 
     npm install -g jshint
 
-# 7. Instalación de rvm 
+# 7. Instalación de rvm  
 Esto nos servirá para intalar, manejar y trabajar con ruby. 
 Ejecutamos el comando:
     sudo apt-get install software-properties-common
@@ -75,9 +73,20 @@ Acontinuación descargamos el paquete de instalación de rvm.
     sudo apt-get install rvm
 Cambiamos de usuario de rvm a nuestro usuario: 
     sudo usermod -a -G rvm $USER
-
+# 9. Instalación de Ruby 
+    rvm user gemsets 
+    rvm install ruby
 
 # 8. Instalación de NERDTree para vim 
+    git clone https://github.com/preservim/nerdtree.git ~/.vim/pack/vendor/start/nerdtree
+    vim -u NONE -c "helptags ~/.vim/pack/vendor/start/nerdtree/doc" -c q
+
+# 9. Instalación de Express.js
+    npm install express-generator -g
+
+# 10. Instalación de ctags
+
+    sudo apt install universal-ctags
 
 
 
