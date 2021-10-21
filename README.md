@@ -53,6 +53,7 @@ Lo que debemos escribir será:
  
 
 # 5. Instalación de nvm
+Node Version Manager es un script bash utilizado para administrar múltiples versiones lanzadas de Node. js. Permite realizar operaciones como instalar, desinstalar, cambiar de versión, etc.
 
 Para instalar nvm ejecutamos el siguiente comando:
     wget -qO- https://raw.githubusercontent.com/nvm-sh/nvm/v0.38.0/install.sh | bash
@@ -61,11 +62,13 @@ Ahora podemos instalar nvm con el comando:
     nvm install --lts
 
 # 6. Instalación de Jshint 
+SHint es una herramienta de análisis de código estático utilizada en el desarrollo de software para verificar si el código fuente de JavaScript cumple con las reglas de codificación. JSHint
+
 Ejecutamos el comando: 
     npm install -g jshint
 
 # 7. Instalación de rvm  
-Esto nos servirá para intalar, manejar y trabajar con ruby. 
+De las siglas, Ruby Version Manager, es una plataforma de software para sistemas operativos tipo UNIX diseñada para administrar múltiples instalaciones de Ruby en el mismo dispositivo.
 Ejecutamos el comando:
     sudo apt-get install software-properties-common
 
@@ -74,20 +77,29 @@ Acontinuación descargamos el paquete de instalación de rvm.
     sudo apt-get update
     sudo apt-get install rvm
 Cambiamos de usuario de rvm a nuestro usuario: 
-    sudo usermod -a -G rvm $USER
+    sudo usermod -a -G rvm $USERç
+
 # 9. Instalación de Ruby 
+Ruby es un lenguaje de programación interpretado, reflexivo y orientado a objetos.
+Para instalarlo, utilizamos rvm y los siguientes comandos:
     rvm user gemsets 
     rvm install ruby
 
 # 8. Instalación de NERDTree para vim 
+El complemento NERDTree le permite a vim ver el directorio y mostrarlo en una estructura de árbol.
+Utilizamos el siguiente comando: 
     git clone https://github.com/preservim/nerdtree.git ~/.vim/pack/vendor/start/nerdtree
     vim -u NONE -c "helptags ~/.vim/pack/vendor/start/nerdtree/doc" -c q
 
 # 9. Instalación de Express.js
+Express.js es un marco de aplicación web de back-end para Node.js, lanzado como software gratuito y de código abierto bajo la licencia MIT. Está diseñado para crear aplicaciones web y API.
+Para descargarlo escribimos en la terminal:
     npm install express-generator -g
 
 # 10. Instalación de ctags
+Ctags es una herramienta de programación que genera un archivo de índice de nombres que se encuentran en los archivos de origen y encabezado de varios lenguajes de programación para ayudar a la comprensión del código. 
 
+Para instalar ctags utilizamos el comando:
     sudo apt install universal-ctags
 
 
