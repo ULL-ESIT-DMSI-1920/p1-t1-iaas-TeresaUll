@@ -60,6 +60,15 @@ Para instalar nvm ejecutamos el siguiente comando:
 Ahora podemos instalar nvm con el comando:
     nvm install --lts
 
-# 6. Instalación de NodeJ con nvm 
+# 6. Instalación de Jshint 
+Ejecutamos el comando: 
+    npm install -g jshint
+
+# 7. Instalación de rvm 
+Esto nos servirá para intalar, manejar y trabajar con ruby. 
+Ejecutamos el comando:
+    sudo apt-get install software-properties-common
+
+# 8. 
 
 
