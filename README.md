@@ -69,6 +69,15 @@ Esto nos servirá para intalar, manejar y trabajar con ruby.
 Ejecutamos el comando:
     sudo apt-get install software-properties-common
 
-# 8. 
+Acontinuación descargamos el paquete de instalación de rvm. 
+    sudo apt-add-repository -y ppa:rael-gc/rvm
+    sudo apt-get update
+    sudo apt-get install rvm
+Cambiamos de usuario de rvm a nuestro usuario: 
+    sudo usermod -a -G rvm $USER
+
+
+# 8. Instalación de NERDTree para vim 
+
 
 
