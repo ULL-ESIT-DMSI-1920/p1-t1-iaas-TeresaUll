@@ -5,12 +5,14 @@ Esta práctica consiste en preparar la máquina virtual para poder trabajar a lo
 
 
 # 1. Instalación de LINUXBREW
+Homebrew es un sistema de gestión de paquetes especialmente diseñado para el sistema operativo Mac OS de Apple.Linuxbrew es una bifurcación de Homebrew.
 
 Ejecutamos en la terminal de la máquina virtual:
     sudo apt install curl
     /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
 # 2. Instalación de GIT
+Git esel sistema de control de versiones moderno más utilizado del mundo. 
 
 Ejecutamos en la terminal:
     sudo apt install git 
@@ -25,15 +27,15 @@ Para configurar git debemos realizar lo siguiente:
 
 # 3. Rama actual en el Prompt de la terminal
 
-FAIL 
+Para hacer esto ejecutamos:
+    wget https://raw.githubusercontent.com/git/git/master/contrib/completion/git-prompt.sh -O ~/.git-prompt.sh
+
+Y ahora editamos ~/.bashrc con emacs añadiendo las siguientes líneas al fichero:
+    source ~/.git-prompt.sh
+    PS1="\n[\[\033[32m\]\w]\[\033[0m\]\$(__git_ps1)\n\[\033[1;33m\]\u\[\033[32m\]$ \[\033[0m\]"
+
 Cosas que he hecho:
 git clone https://github.com/magicmonty/bash-git-prompt.git ~/.bash-git-prompt --depth=1
-
-vi ~/.bashrc
-Añadir al archivo: 
- // # bash-git-prompt
-GIT_PROMPT_ONLY_IN_REPO=1
-source ~/.bash-git-prompt/gitprompt.sh
 
 
 # 4. Alias en git
@@ -46,9 +48,9 @@ Podemos crear un alias para el comando
     gh api -X DELETE /repos/ULL-ESIT-DMSI-1920/pruebateresa
 
 Lo que debemos escribir será:
-    git config --global.delete ´ gh api -X DELETE /repos/ULL-ESIT-DMSI-1920/pruebateresa´
+    git config --global.delete ´gh api -X DELETE /repos/ULL-ESIT-DMSI-1920/pruebateresa´
 
-    !! NO ME FUNCIONA !!
+ 
 
 # 5. Instalación de nvm
 
