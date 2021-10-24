@@ -102,5 +102,10 @@ Ctags es una herramienta de programación que genera un archivo de índice de no
 Para instalar ctags utilizamos el comando:
     sudo apt install universal-ctags
 
+# 11. SSH Keys
+Debemos crear una clave ssh para poder acceder de forma segura y realizar todas las acciones que queramos en la máquina virtual desde nuestro ordenador.
+Para crearla deberemos escribir en la terminal:             
+    ssh-keygen -trsa 
 
+Esto crea una clave pública y otra privada, cogemos la pública para añadirla a github, esta es la que acaba en pub.
 
