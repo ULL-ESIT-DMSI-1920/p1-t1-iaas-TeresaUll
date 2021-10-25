@@ -84,6 +84,8 @@ Ruby es un lenguaje de programación interpretado, reflexivo y orientado a objet
 Para instalarlo, utilizamos rvm y los siguientes comandos:
     rvm user gemsets 
     rvm install ruby
+    
+![image](ULL-ESIT-DMSI-1920/p1-t1-iaas-TeresaUll/ruby.png)
 
 # 8. Instalación de NERDTree para vim 
 El complemento NERDTree le permite a vim ver el directorio y mostrarlo en una estructura de árbol.
