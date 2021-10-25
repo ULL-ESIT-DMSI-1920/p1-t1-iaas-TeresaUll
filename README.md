@@ -1,5 +1,8 @@
+Teresa Bonet Costa 
+
 
 # Práctica 1: IAAS
+
 
 Esta práctica consiste en preparar la máquina virtual para poder trabajar a lo largo de la asignatura. 
 
