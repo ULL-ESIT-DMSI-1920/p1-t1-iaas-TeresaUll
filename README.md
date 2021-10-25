@@ -18,7 +18,7 @@ Ejecutamos en la terminal:
     sudo apt install git 
 También podemos comprobar cual es la versión que hemos descargado con el comando: 
     git --version 
-![image](/Users/teresabonetcosta/Desktop/capt1git.png)
+![image](capt1git.png)
 
 Para configurar git debemos realizar lo siguiente: 
     git config --global user.name "teresaull"
@@ -34,22 +34,19 @@ Y ahora editamos ~/.bashrc con emacs añadiendo las siguientes líneas al ficher
     source ~/.git-prompt.sh
     PS1="\n[\[\033[32m\]\w]\[\033[0m\]\$(__git_ps1)\n\[\033[1;33m\]\u\[\033[32m\]$ \[\033[0m\]"
 
-Cosas que he hecho:
-git clone https://github.com/magicmonty/bash-git-prompt.git ~/.bash-git-prompt --depth=1
 
 
 # 4. Alias en git
 
 Esta funcionalidad nos permite cambiar el nombre a comandos que utilicemos recurrentemente para que sea más rápido trabajar con ellos. 
-Utilizando el comando:
-    git config --global alias.{nombre que quieras para tu comando} {comando con el nombre actual}
 
-Podemos crear un alias para el comando 
-    gh api -X DELETE /repos/ULL-ESIT-DMSI-1920/pruebateresa
+Podemos crear un alias para borrar los repos que queramos de forma más sencilla:
+  gh alias set repo-delete 'api -X DELETE "/repos/$1"'
 
-Lo que debemos escribir será:
-    git config --global.delete ´gh api -X DELETE /repos/ULL-ESIT-DMSI-1920/pruebateresa´
+Lo que hacen las comillas simples es evitar que el shell interprete lo que hay dentro de estas, es decir, lo protege. El $1 lo que indica es el primer parámetro que se le pase, ocurriría con el segundo con $2 y así hasta el número que queramos.
 
+Ahora cuando queramos borrar un repo deberemos escribir: 
+    gh repo-delete ULL-ESIT-DMSI-1920/teresaPrueba  
  
 
 # 5. Instalación de nvm
@@ -60,12 +57,17 @@ Para instalar nvm ejecutamos el siguiente comando:
 
 Ahora podemos instalar nvm con el comando:
     nvm install --lts
-
+![image](capnodej.png)
+ 
+Para ver que versión tenemos de node ejecutamos el siguiente comando:
+![image](versionNode.png)
 # 6. Instalación de Jshint 
 SHint es una herramienta de análisis de código estático utilizada en el desarrollo de software para verificar si el código fuente de JavaScript cumple con las reglas de codificación. JSHint
 
 Ejecutamos el comando: 
     npm install -g jshint
+
+![image](cap2.png)
 
 # 7. Instalación de rvm  
 De las siglas, Ruby Version Manager, es una plataforma de software para sistemas operativos tipo UNIX diseñada para administrar múltiples instalaciones de Ruby en el mismo dispositivo.
@@ -77,7 +79,9 @@ Acontinuación descargamos el paquete de instalación de rvm.
     sudo apt-get update
     sudo apt-get install rvm
 Cambiamos de usuario de rvm a nuestro usuario: 
-    sudo usermod -a -G rvm $USERç
+    sudo usermod -a -G rvm $USER
+
+![image](rvm.png)
 
 # 9. Instalación de Ruby 
 Ruby es un lenguaje de programación interpretado, reflexivo y orientado a objetos.
@@ -85,7 +89,7 @@ Para instalarlo, utilizamos rvm y los siguientes comandos:
     rvm user gemsets 
     rvm install ruby
     
-![image](ULL-ESIT-DMSI-1920/p1-t1-iaas-TeresaUll/ruby.png)
+![image](ruby.png)
 
 # 8. Instalación de NERDTree para vim 
 El complemento NERDTree le permite a vim ver el directorio y mostrarlo en una estructura de árbol.
@@ -103,6 +107,7 @@ Ctags es una herramienta de programación que genera un archivo de índice de no
 
 Para instalar ctags utilizamos el comando:
     sudo apt install universal-ctags
+![image](ctags.png)
 
 # 11. SSH Keys
 Debemos crear una clave ssh para poder acceder de forma segura y realizar todas las acciones que queramos en la máquina virtual desde nuestro ordenador.
@@ -111,3 +116,4 @@ Para crearla deberemos escribir en la terminal:
 
 Esto crea una clave pública y otra privada, cogemos la pública para añadirla a github, esta es la que acaba en pub.
 
+![image](ssh.png)
